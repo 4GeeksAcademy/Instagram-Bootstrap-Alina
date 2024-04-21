@@ -1,0 +1,16 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  max-width: 40rem;
+}
+
+.modal-body button {
+  width: 35px;
+  height: 35px;
+}
+
+.page-selector button:focus {
+  color: rgb(63, 63, 63);
+}

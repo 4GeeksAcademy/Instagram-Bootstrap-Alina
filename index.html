@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+
+      <!-- Logo Name -->
+      <a class="navbar-brand fw-medium" href="#home"><i class="fa-brands fa-instagram fs-5 me-3"></i>Instagram</a>
+      <!-- Modal -->
+      <button type="button" class="btn btn-success ms-auto me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <span class="d-none d-md-inline">Create new post</span> <!-- When width is > 770px -->
+        <i class="fa-solid fa-square-plus d-inline d-md-none"></i> <!-- When width is < 770px -->
+      </button>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Create new post</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h6 class="fw-bold">Caption:</h6>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post here"></textarea>
+              <button class="border border-1 border-opacity-25 mt-2"><i class="fa-solid fa-camera"></i></button>
+              <button class="border border-1 border-opacity-25 "><i class="fa-solid fa-location-dot"></i></button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Publish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Dropdown -->
+      <button type="button" class="nav-item btn btn-secondary  dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-gear"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end mt-3">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Accesibility</a></li>
+          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+        </ul>
+      </button>
+    </div>
+  </nav>
+  <!-- Change pages -->
+  <ul class="nav d-flex justify-content-center page-selector" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+        role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-border-all"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+        role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+    </li>
+  </ul>
+  <!-- Pages -->
+  <div class="tab-content" id="myTabContent">
+    <!-- Grid Page -->
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+      <div class="container d-flex justify-content-center">
+        <div class="grid gap-2 pt-2 mb-5">
+          <div class="photo-grid g-col-lg-4 g-col-md-6 g-col-12">
+            <img class="img-fluid object-fit-cover h-100"src="https://www.thephoblographer.com/wp-content/uploads/2021/10/Zoe.jpg" alt="">
+          </div>
+          <div class="photo-grid g-col-lg-4 g-col-md-6 g-col-12">
+            <img class="img-fluid object-fit-cover h-100"src="https://www.focusonthefamily.com/wp-content/uploads/2019/09/friendship-factor-1.jpg"
+              alt="DogPhoto">
+          </div>
+          <div class="photo-grid g-col-lg-4 g-col-md-6 g-col-12">
+            <img class="img-fluid object-fit-cover h-100" src="https://boutiquejapan.com/wp-content/uploads/2019/07/yasaka-pagoda-higashiyama-kyoto-japan.jpg"
+              alt="">
+          </div>
+          <div class="photo-grid g-col-lg-4 g-col-md-6 g-col-12">
+            <img class="img-fluid object-fit-cover h-100"
+              src="https://www.lawnstarter.com/blog/wp-content/uploads/2022/12/iStock-1423384637-2-feature-image-1.jpg" alt="">
+          </div>
+          <div class="photo-grid g-col-lg-4 g-col-md-6 g-col-12">
+            <img class="img-fluid object-fit-cover h-100" src="https://bestfriends.org/sites/default/files/2023-02/Victory3427MW_Social.jpg" alt="">
+          </div>
+          <div class="photo-grid g-col-lg-4 g-col-md-6 g-col-12">
+            <img class="img-fluid object-fit-cover h-100"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Borscht_served.jpg/1200px-Borscht_served.jpg"
+              alt="">
+          </div>
+          <div class="photo-grid g-col-lg-4 g-col-md-6 g-col-12">
+            <img class="img-fluid object-fit-cover h-100" src="https://cf.ltkcdn.net/family/images/orig/200821-2121x1414-family.jpg" alt="">
+          </div>
+          <div class="photo-grid g-col-lg-4 g-col-md-6 g-col-12">
+            <img class="img-fluid object-fit-cover h-100" src="https://www.umrelief.org/wp-content/uploads/2023/08/Importance-of-Charity-in-Islam-2-scaled.jpg"
+              alt="">
+          </div>
+          <div class="photo-grid g-col-lg-4 g-col-md-6 g-col-12">
+            <img class="img-fluid object-fit-cover h-100"
+              src="https://estaticos-cdn.prensaiberica.es/clip/638271b7-76f8-4792-99df-13fd07c3fef2_source-aspect-ratio_default_0.jpg"
+              alt="">
+          </div>
+          <div class="photo-grid g-col-lg-4 g-col-md-6 g-col-12">
+            <img class="img-fluid object-fit-cover h-100" class="object-fit-cover " src="https://media.timeout.com/images/105998860/image.jpg" alt="">
+          </div>
+          <div class="photo-grid g-col-lg-4 g-col-md-6 g-col-12">
+            <img class="img-fluid object-fit-cover h-100"
+              src="https://img1.wsimg.com/isteam/ip/1e359bb4-cabe-4e03-bd77-8db8ba90a350/ols/green-cheeked-conure-1.jpg/:/rs=w:1200,h:1200"
+              alt="">
+          </div>
+          <div class="photo-grid g-col-lg-4 g-col-md-6 g-col-12">
+            <img class="img-fluid object-fit-cover h-100"
+              src="https://i.natgeofe.com/n/6f9b6d9e-5797-4867-a859-7b0c2a66cd3b/02-bird-of-paradise-A012_C010_1029SF_0001575_3x2.jpg"
+              alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- Horitzontal Page -->
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+      <div class="container d-grid gap-5 justify-content-center">
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">My crazy dog Spark!</h5>
+          </div>
+          <div class="div-img-container">
+            <img class="img-fluid object-fit-cover h-100" src="https://www.thephoblographer.com/wp-content/uploads/2021/10/Zoe.jpg" alt="DogPhoto">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title fw-bold">204 likes</h6>
+            <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Friends!</h5>
+          </div>
+          <div class="div-img-container">
+            <img class="img-fluid object-fit-cover h-100"src="https://www.focusonthefamily.com/wp-content/uploads/2019/09/friendship-factor-1.jpg"
+              alt="DogPhoto">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title fw-bold">204 likes</h6>
+            <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">My crazy dog Spark!</h5>
+          </div>
+          <div class="div-img-container">
+            <img class="img-fluid object-fit-cover h-100"src="https://boutiquejapan.com/wp-content/uploads/2019/07/yasaka-pagoda-higashiyama-kyoto-japan.jpg"
+              alt="DogPhoto">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title fw-bold">204 likes</h6>
+            <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">My crazy dog Spark!</h5>
+          </div>
+          <div class="div-img-container">
+            <img class="img-fluid object-fit-cover h-100"src="https://www.lawnstarter.com/blog/wp-content/uploads/2022/12/iStock-1423384637-2-feature-image-1.jpg"
+              alt="DogPhoto">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title fw-bold">204 likes</h6>
+            <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">My crazy dog Spark!</h5>
+          </div>
+          <div class="div-img-container">
+            <img class="img-fluid object-fit-cover h-100"src="https://bestfriends.org/sites/default/files/2023-02/Victory3427MW_Social.jpg"
+              alt="DogPhoto">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title fw-bold">204 likes</h6>
+            <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">My crazy dog Spark!</h5>
+          </div>
+          <div class="div-img-container">
+            <img class="img-fluid object-fit-cover h-100"src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Borscht_served.jpg/1200px-Borscht_served.jpg"
+              alt="DogPhoto">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title fw-bold">204 likes</h6>
+            <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">My crazy dog Spark!</h5>
+          </div>
+          <div class="div-img-container">
+            <img class="img-fluid object-fit-cover h-100"src="https://cf.ltkcdn.net/family/images/orig/200821-2121x1414-family.jpg"
+              alt="DogPhoto">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title fw-bold">204 likes</h6>
+            <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">My crazy dog Spark!</h5>
+          </div>
+          <div class="div-img-container">
+            <img class="img-fluid object-fit-cover h-100"src="https://www.umrelief.org/wp-content/uploads/2023/08/Importance-of-Charity-in-Islam-2-scaled.jpg"
+              alt="DogPhoto">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title fw-bold">204 likes</h6>
+            <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">My crazy dog Spark!</h5>
+          </div>
+          <div class="div-img-container">
+            <img class="img-fluid object-fit-cover h-100"src="https://estaticos-cdn.prensaiberica.es/clip/638271b7-76f8-4792-99df-13fd07c3fef2_source-aspect-ratio_default_0.jpg"
+              alt="DogPhoto">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title fw-bold">204 likes</h6>
+            <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">My crazy dog Spark!</h5>
+          </div>
+          <div class="div-img-container">
+            <img class="img-fluid object-fit-cover h-100"src="https://media.timeout.com/images/105998860/image.jpg"
+              alt="DogPhoto">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title fw-bold">204 likes</h6>
+            <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">My crazy dog Spark!</h5>
+          </div>
+          <div class="div-img-container">
+            <img class="img-fluid object-fit-cover h-100"src="https://img1.wsimg.com/isteam/ip/1e359bb4-cabe-4e03-bd77-8db8ba90a350/ols/green-cheeked-conure-1.jpg/:/rs=w:1200,h:1200"
+              alt="DogPhoto">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title fw-bold">204 likes</h6>
+            <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">My crazy dog Spark!</h5>
+          </div>
+          <div class="div-img-container">
+            <img class="img-fluid object-fit-cover h-100"src="https://i.natgeofe.com/n/6f9b6d9e-5797-4867-a859-7b0c2a66cd3b/02-bird-of-paradise-A012_C010_1029SF_0001575_3x2.jpg"
+              alt="DogPhoto">
+          </div>
+          <div class="card-body">
+            <h6 class="card-title fw-bold">204 likes</h6>
+            <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/be086872d7.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
